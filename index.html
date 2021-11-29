@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <script src="https://kit.fontawesome.com/d6e55bb259.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    logo
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="video.html" class="active">
+                        <span class="icon"><i class="fas fa-book"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="video.html">
+                        <span class="icon"><i class="fas fa-file-video"></i></span>
+                        <span class="title">New</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="video.html">
+                        <span class="icon"><i class="fas fa-volleyball-ball"></i></span>
+                        <span class="title">Dating</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="v">
+                        <span class="icon"><i class="fas fa-blog"></i></span>
+                        <span class="title">Hall Of Fame</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="video.html">
+                        <span class="icon"><i class="fas fa-leaf"></i></span>
+                        <span class="title">Nature</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_container">
+            <div class="item">
+                <a href="video.html">
+                    <img src="https://foto.haberler.com/manset/2020/02/23/tuba-unsal-ic-camasirsiz-pozlariyla-sosyal_12947281_1357_z7_510.jpg" alt=""><br>
+                    <p> Isparta'da kayıp 3 liseli kızdan 4 gündür haber alınamıyor</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="video.html">
+                    <img src="https://foto.haberler.com/manset/2020/02/23/tarihi-derbide-kartlar-havada-ucustu_12947386_2094_z2_510.jpg" alt=""><br>
+                    <p> Antalyaspor, Podolski'nin golüyle Yeni Malatyaspor'u 2-1 mağlup etti</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="video.html">
+                    <img src="https://foto.haberler.com/manset/2020/02/23/bkm-nin-havuclu-annesi-verdigi-kilolarla-adeta_717236_4328_z3_510.jpg" alt=""><br>
+                    <p> Manisa'da deprem fırtınası sürüyor! 1 günde 44 deprem meydana geldi</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="video.html">
+                    <img src="https://foto.haberler.com/manset/2020/02/22/netflix-icin-cekilecek-yeni-turk-dizisinde_12945091_2576_z2_510.jpg" alt=""><br>
+                    <p> Sheffield United menajeri, derbi için İstanbul'a geldi</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="video.html">
+                    <img src="https://foto.haberler.com/manset/2020/02/23/f-bahce-den-g-saray-a-rocky-gondermesi-muthis_12947200_466_z2_510.jpg" alt=""><br>
+                    <p> Fenerbahçe taraftarından Galatasaray'a Rocky göndermeli koreografi</p>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(".hamburger").click(function() {
+            $(".sidebar").toggle(50);
+
+            if ($(".main_container").css("margin-left") == "0px") {
+
+                $(".main_container").css("width", "calc(100% - 240px)");
+                $(".main_container").css("margin-left", "240px");
+
+            } else {
+
+                $(".main_container").css("width", "100%");
+                $(".main_container").css("margin-left", "0");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

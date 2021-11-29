@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <script src="https://kit.fontawesome.com/d6e55bb259.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .sidebar {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    logo
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-book"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-file-video"></i></span>
+                        <span class="title">New</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-volleyball-ball"></i></span>
+                        <span class="title">Dating</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-blog"></i></span>
+                        <span class="title">Hall Of Fame</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-leaf"></i></span>
+                        <span class="title">Nature</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_container_video">
+
+            <div class="video-container">
+                <div class="video">
+                    <img src="https://images.pexels.com/photos/3646213/pexels-photo-3646213.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="max-height: 500px;">
+                </div>
+                <div class="video-details">
+                    <ul>
+                        <li>
+                            <a href="video.html"><i class="far fa-heart"></i> <span>Favorites</span></a>
+                        </li>
+                        <li>
+                            <a href="video.html"><i class="far fa-clock"></i> <span>Watch Later</span></a>
+                        </li>
+                        <li>
+                            <a href="video.html"><i class="fas fa-arrow-down"></i> <span>Download</span></a>
+                        </li>
+
+                        <li>
+                            <a href="video.html"><i class="fas fa-info-circle"></i> <span>Details</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="video-page-right">Reklam Alanı</div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(".hamburger").click(function() {
+            $(".sidebar").toggle(50);
+
+            if ($(".main_container_video").css("margin-left") == "0px") {
+
+                $(".main_container_video").css("width", "calc(100% - 240px)");
+                $(".main_container_video").css("margin-left", "240px");
+
+            } else {
+
+                $(".main_container_video").css("width", "100%");
+                $(".main_container_video").css("margin-left", "0");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
